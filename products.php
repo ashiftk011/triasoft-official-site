@@ -297,13 +297,207 @@
   <body>
 
     <!-- Preloader -->
-    <div class="preloader">
-      <button class="th-btn preloaderCls">Cancel Preloader</button>
+    <div class="preloader" id="sitePreloader">
+      <button class="th-btn preloaderCls">Skip Intro</button>
       <div class="preloader-inner">
-        <img src="assets/img/logo.png" alt="img" width="100px" />
-        <span class="loader">TRIASOFT<span class="loading-text">TRIASOFT</span></span>
+        <div class="loader-container" aria-label="Triasoft loading">
+          <div class="part part-1"></div>
+          <div class="part part-2"></div>
+          <div class="part part-3"></div>
+        </div>
+        <div class="preloader-copy">
+          <span class="preloader-kicker">Loading Triasoft</span>
+          <p>Preparing web, mobile, and product experiences.</p>
+        </div>
       </div>
     </div>
+    <script>
+      // Keep the preloader visible for 3 seconds
+      (function(){
+        var minWait = 3000;
+        var t = setTimeout(function(){
+          var p = document.getElementById('sitePreloader');
+          if(p){ p.classList.add('loaded'); }
+        }, minWait);
+        window.addEventListener('load', function(){
+          // Let the timer control when the preloader hides.
+        });
+      })();
+    </script>
+    <style>
+      #sitePreloader {
+        background:
+          radial-gradient(circle at 20% 20%, rgba(80, 201, 255, 0.12), transparent 28%),
+          radial-gradient(circle at 80% 18%, rgba(77, 157, 224, 0.12), transparent 24%),
+          linear-gradient(135deg, #050816 0%, #0a1120 48%, #060a13 100%);
+        overflow: hidden;
+        transition: opacity 0.45s ease, visibility 0.45s ease;
+      }
+
+      #sitePreloader.loaded {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      #sitePreloader .th-btn {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        padding: 12px 20px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+        color: #eaf2ff;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+      }
+
+      #sitePreloader .th-btn:hover {
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+      }
+
+      #sitePreloader .preloader-inner {
+        width: min(92vw, 520px);
+        padding: 24px;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+      }
+
+      #sitePreloader .preloader-copy {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      #sitePreloader .preloader-kicker {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: rgba(234, 242, 255, 0.78);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      #sitePreloader .preloader-copy p {
+        margin: 0 auto;
+        max-width: 360px;
+        color: rgba(214, 227, 247, 0.68);
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      #sitePreloader .loader-container {
+        position: relative;
+        width: min(300px, 72vw);
+        height: 200px;
+        margin: 0 auto 18px;
+      }
+
+      #sitePreloader .part {
+        position: absolute;
+        overflow: hidden;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: triLoaderMove 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+      }
+
+      #sitePreloader .part::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -200%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.9) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: skewX(-30deg);
+        animation: triLoaderGlare 3s ease-in-out infinite;
+        animation-delay: 1.5s;
+      }
+
+      #sitePreloader .part-1 {
+        width: 170px;
+        height: 55px;
+        background: linear-gradient(135deg, #50c9ff 0%, #3db2e5 100%);
+        clip-path: polygon(40% 0%, 100% 0%, 60% 100%, 0% 100%);
+        --final-x: -150px;
+        --final-y: -70px;
+      }
+
+      #sitePreloader .part-2 {
+        width: 130px;
+        height: 55px;
+        background: linear-gradient(135deg, #4d9de0 0%, #2a64ad 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 52% 100%, 18% 100%);
+        --final-x: 25px;
+        --final-y: -76px;
+      }
+
+      #sitePreloader .part-3 {
+        width: 155px;
+        height: 55px;
+        background: linear-gradient(135deg, #ffb347 0%, #f88a25 100%);
+        clip-path: polygon(45% 0%, 100% 0%, 60% 100%, 0% 100%);
+        --final-x: -100px;
+        --final-y: -15px;
+      }
+
+      @keyframes triLoaderMove {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(var(--final-x), var(--final-y));
+        }
+      }
+
+      @keyframes triLoaderGlare {
+        0% { left: -200%; }
+        30% { left: 150%; }
+        100% { left: 150%; }
+      }
+
+      @media (max-width: 767px) {
+        #sitePreloader .th-btn {
+          top: 18px;
+          right: 18px;
+          padding: 10px 16px;
+        }
+
+        #sitePreloader .preloader-inner {
+          width: min(92vw, 92vw);
+          padding: 24px 18px;
+        }
+
+        #sitePreloader .loader-container {
+          width: min(280px, 78vw);
+          height: 170px;
+        }
+
+        #sitePreloader .preloader-copy p {
+          font-size: 14px;
+          line-height: 1.7;
+        }
+      }
+    </style>
 
     <!-- Mobile Menu -->
     <div class="th-menu-wrapper onepage-nav">
@@ -324,8 +518,43 @@
       </div>
     </div>
 
+    <!-- Header CSS -->
+    <style>
+      /* Tech Header Dark Theme Overrides */
+      .tech-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background: transparent !important;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .tech-header .menu-area {
+        background: transparent !important;
+      }
+      .tech-header .main-menu > ul > li > a {
+        color: #fff !important;
+      }
+      .tech-header .main-menu > ul > li > a:hover {
+        color: #a5b4fc !important;
+      }
+      .sticky-wrapper.sticky,
+      .sticky-wrapper.sticky .menu-area,
+      .sticky-wrapper.sticky .sticky-active {
+        background: transparent !important;
+        background-color: #000 !important;
+        box-shadow: none !important;
+      }
+      .sticky-wrapper.sticky .tech-header,
+      .tech-header.sticky-active {
+        background: rgba(3, 2, 10, 0.95) !important;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+      }
+    </style>
     <!-- Header -->
-    <header class="th-header header-layout5">
+    <header class="th-header header-layout5 tech-header">
       <div class="sticky-wrapper">
         <div class="menu-area">
           <div class="container th-container6">
@@ -333,7 +562,7 @@
               <div class="col-auto">
                 <div class="header-logo">
                   <a href="default.php">
-                    <img src="assets/img/full-logo.png" width="250px" alt="Triasoft" />
+                    <img src="assets/img/logo-white.png" width="250px" alt="Triasoft" />
                   </a>
                 </div>
               </div>
@@ -836,7 +1065,165 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-wrapper bg-title footer-layout2 space-top">
+    <style>
+      .new-footer-sec {
+        background-color: #0d044aff;
+        background-image: radial-gradient(circle at 50% 100%, rgba(20, 20, 70, 0.45) 0%, transparent 60%);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.7);
+        padding-top: 80px;
+        position: relative;
+        overflow: hidden;
+      }
+      .new-footer-sec .widget_title {
+        color: #fff;
+        font-size: 1.25rem;
+        margin-bottom: 25px;
+        font-weight: 600;
+      }
+      .new-footer-sec .about-text {
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 20px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+      .new-footer-sec .th-social a {
+        background: rgba(255, 255, 255, 0.05);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.4s ease;
+      }
+      .new-footer-sec .th-social a:hover {
+        background: #6366f1;
+        border-color: #6366f1;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+      }
+      .new-footer-sec .menu {
+        padding: 0;
+        margin: 0;
+      }
+      .new-footer-sec .menu li {
+        list-style: none;
+        margin-bottom: 12px;
+      }
+      .new-footer-sec .menu li a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+      }
+      .new-footer-sec .menu li a:hover {
+        color: #a5b4fc;
+        transform: translateX(5px);
+      }
+      .new-footer-sec .menu li a::before {
+        content: '\f105';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        margin-right: 8px;
+        font-size: 0.8rem;
+        color: #6366f1;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+      .new-footer-sec .menu li a:hover::before {
+        opacity: 1;
+        color: #a5b4fc;
+      }
+      .new-footer-sec .info-box_text {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .new-footer-sec .info-box_text .icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(99, 102, 241, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        color: #6366f1;
+      }
+      .new-footer-sec .info-box_text .icon img {
+        width: 16px;
+        filter: brightness(0) invert(1);
+      }
+      .new-footer-sec .info-box_text .details p {
+        margin: 0;
+        line-height: 1.6;
+      }
+      .new-footer-sec .info-box_link {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .new-footer-sec .info-box_link:hover {
+        color: #a5b4fc;
+      }
+      .new-footer-sec .copyright-wrap {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 25px 0;
+        margin-top: 50px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .new-footer-sec .copyright-text {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .new-footer-sec .copyright-text a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .new-footer-sec .copyright-text a:hover {
+        color: #6366f1;
+      }
+      .new-footer-sec .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+      .new-footer-sec .footer-links a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .new-footer-sec .footer-links a:hover {
+        color: #a5b4fc;
+      }
+      @media (max-width: 991px) {
+        .new-footer-sec .footer-links ul {
+          justify-content: center;
+          margin-top: 15px;
+        }
+        .new-footer-sec .copyright-text {
+          text-align: center;
+        }
+        .new-footer-sec {
+          padding-top: 60px;
+        }
+        .new-footer-sec .widget {
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+    <footer class="new-footer-sec">
       <div class="widget-area">
         <div class="container">
           <div class="row justify-content-between">

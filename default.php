@@ -2185,13 +2185,13 @@ Product Area
               <div class="nt-card">
                 <div class="nt-front" style="background-image: url('assets/img/team/sundar.jpeg');">
                   <div class="nt-front-info">
-                    <h3 class="nt-name">Sundar Das</h3>
+                    <h3 class="nt-name">Sundardas P S</h3>
                     <span class="nt-role">Software Developer</span>
                   </div>
                 </div>
                 <div class="nt-hover">
                   <div class="nt-hover-title">
-                    <h3 class="nt-name">Sundar Das</h3>
+                    <h3 class="nt-name">Sundardas P S</h3>
                     <span class="nt-role">Software Developer</span>
                   </div>
                   <p class="nt-desc">Sundar architects robust backend systems and APIs, ensuring secure, high-performance data processing for all Triasoft products.</p>
@@ -2204,13 +2204,13 @@ Product Area
               <div class="nt-card">
                 <div class="nt-front" style="background-image: url('assets/img/team/hanal.jpeg');">
                   <div class="nt-front-info">
-                    <h3 class="nt-name">Hanal</h3>
+                    <h3 class="nt-name">Mohammed Hanal</h3>
                     <span class="nt-role">Senior Developer</span>
                   </div>
                 </div>
                 <div class="nt-hover">
                   <div class="nt-hover-title">
-                    <h3 class="nt-name">Hanal</h3>
+                    <h3 class="nt-name">Mohammed Hanal</h3>
                     <span class="nt-role">Senior Developer</span>
                   </div>
                   <p class="nt-desc">Dedicated to faultless delivery, Hanal implements rigorous testing strategies to guarantee reliability and perfection in every release.</p>
@@ -2471,7 +2471,165 @@ Product Area
     <!--==============================
 	Footer Area
 ==============================-->
-    <footer class="footer-wrapper bg-title footer-layout2 space-top">
+    <style>
+      .new-footer-sec {
+        background-color: #0d044aff;
+        background-image: radial-gradient(circle at 50% 100%, rgba(20, 20, 70, 0.45) 0%, transparent 60%);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.7);
+        padding-top: 80px;
+        position: relative;
+        overflow: hidden;
+      }
+      .new-footer-sec .widget_title {
+        color: #fff;
+        font-size: 1.25rem;
+        margin-bottom: 25px;
+        font-weight: 600;
+      }
+      .new-footer-sec .about-text {
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 20px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+      .new-footer-sec .th-social a {
+        background: rgba(255, 255, 255, 0.05);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.4s ease;
+      }
+      .new-footer-sec .th-social a:hover {
+        background: #6366f1;
+        border-color: #6366f1;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+      }
+      .new-footer-sec .menu {
+        padding: 0;
+        margin: 0;
+      }
+      .new-footer-sec .menu li {
+        list-style: none;
+        margin-bottom: 12px;
+      }
+      .new-footer-sec .menu li a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+      }
+      .new-footer-sec .menu li a:hover {
+        color: #a5b4fc;
+        transform: translateX(5px);
+      }
+      .new-footer-sec .menu li a::before {
+        content: '\f105';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        margin-right: 8px;
+        font-size: 0.8rem;
+        color: #6366f1;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+      .new-footer-sec .menu li a:hover::before {
+        opacity: 1;
+        color: #a5b4fc;
+      }
+      .new-footer-sec .info-box_text {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .new-footer-sec .info-box_text .icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(99, 102, 241, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        color: #6366f1;
+      }
+      .new-footer-sec .info-box_text .icon img {
+        width: 16px;
+        filter: brightness(0) invert(1);
+      }
+      .new-footer-sec .info-box_text .details p {
+        margin: 0;
+        line-height: 1.6;
+      }
+      .new-footer-sec .info-box_link {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .new-footer-sec .info-box_link:hover {
+        color: #a5b4fc;
+      }
+      .new-footer-sec .copyright-wrap {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 25px 0;
+        margin-top: 50px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .new-footer-sec .copyright-text {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .new-footer-sec .copyright-text a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .new-footer-sec .copyright-text a:hover {
+        color: #6366f1;
+      }
+      .new-footer-sec .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+      .new-footer-sec .footer-links a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .new-footer-sec .footer-links a:hover {
+        color: #a5b4fc;
+      }
+      @media (max-width: 991px) {
+        .new-footer-sec .footer-links ul {
+          justify-content: center;
+          margin-top: 15px;
+        }
+        .new-footer-sec .copyright-text {
+          text-align: center;
+        }
+        .new-footer-sec {
+          padding-top: 60px;
+        }
+        .new-footer-sec .widget {
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+    <footer class="new-footer-sec">
       <div class="widget-area">
         <div class="container">
           <div class="row justify-content-between">

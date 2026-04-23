@@ -528,7 +528,7 @@ Hero Area
       .sticky-wrapper.sticky .menu-area,
       .sticky-wrapper.sticky .sticky-active {
         background: transparent !important;
-        background-color: transparent !important;
+        background-color: #000 !important;
         box-shadow: none !important;
       }
       .sticky-wrapper.sticky .tech-header,

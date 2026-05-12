@@ -6,15 +6,6 @@
     <title>
       Triasoft - Web & App Development Services for Digital Transformation
     </title>
-    <meta name="author" content="Atek" />
-    <meta
-      name="description"
-      content="Atek - It Business and Consulting Service Html Template"
-    />
-    <meta
-      name="keywords"
-      content="Atek - It Business and Consulting Service Html Template"
-    />
     <meta name="robots" content="INDEX,FOLLOW" />
 
     <!-- Mobile Specific Metas -->
@@ -23,57 +14,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/img/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/img/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/img/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/img/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/img/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/img/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/img/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/img/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicons/apple-icon-180x180.png"
-    />
     <link rel="icon" type="image/png" href="assets/img/logo.png" />
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-png" />
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png" /> -->
     <link rel="manifest" href="assets/img/favicons/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
@@ -354,24 +296,24 @@
       <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-          <a href="index.html"><img src="assets/img/logo2.svg" alt="Atek" /></a>
+          <a href="default.php"><img src="assets/img/logo2.svg" alt="Atek" /></a>
         </div>
         <div class="th-mobile-menu">
           <ul>
             <li class="menu-item mega-menu-wrap">
-              <a class="active" href="index.html">Home</a>
+              <a class="active" href="default.php">Home</a>
             </li>
             <li class="menu-item">
               <a href="#">About Us</a>
             </li>
             <li class="menu-item">
-              <a href="#">Our Services</a>
+              <a href="#services">Our Services</a>
             </li>
             <li class="menu-item">
               <a href="products.php">Our Products</a>
             </li>
             <li class="menu-item">
-              <a href="contact.html">Contact us</a>
+              <a href="contact.php">Contact us</a>
             </li>
           </ul>
         </div>
@@ -388,8 +330,8 @@
             <div class="row align-items-center justify-content-between">
               <div class="col-auto">
                 <div class="header-logo">
-                  <a href="#">
-                    <img src="assets/img/logo-white.png" alt="Atek" width="250px" />
+                  <a href="default.php">
+                    <img src="assets/img/logo-white.png" width="250px" />
                   </a>
                 </div>
               </div>
@@ -397,7 +339,7 @@
                 <nav class="main-menu d-none d-xl-block">
                   <ul>
                     <li class="menu-item mega-menu-wrap">
-                      <a class="active" href="#">Home</a>
+                      <a class="active" href="default.php">Home</a>
                     </li>
                     <li class="menu-item">
                       <a href="#about-sec">About Us</a>
@@ -1240,7 +1182,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-globe"></i> Web Services</span>
               <h3 class="svc-card-title">Custom Web Development</h3>
               <p class="svc-card-desc">Tailored website solutions designed to meet specific business requirements.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -1259,7 +1201,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-mobile-screen"></i> App Experience</span>
               <h3 class="svc-card-title">Mobile App Development</h3>
               <p class="svc-card-desc">We design and develop native mobile apps for iOS and Android platforms with performance, clarity, and polished user journeys.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -1276,7 +1218,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-cart-shopping"></i> Commerce</span>
               <h3 class="svc-card-title">E-Commerce Development</h3>
               <p class="svc-card-desc">Development of secure, scalable, and user-friendly online stores that drive sales.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -1295,7 +1237,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-pen-ruler"></i> Product Design</span>
               <h3 class="svc-card-title">UI/UX Design</h3>
               <p class="svc-card-desc">Designing intuitive and visually appealing interfaces for websites and apps.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -1308,7 +1250,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-plug"></i> Integrations</span>
               <h3 class="svc-card-title">API Development</h3>
               <p class="svc-card-desc">Integration of third-party APIs to enhance app and website functionality.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -1321,7 +1263,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-diagram-project"></i> Enterprise</span>
               <h3 class="svc-card-title">ERP Applications</h3>
               <p class="svc-card-desc">Customized ERP systems to streamline operations, manage resources, and drive growth.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -1342,7 +1284,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-microchip"></i> Connected Devices</span>
               <h3 class="svc-card-title">IoT Applications</h3>
               <p class="svc-card-desc">Solutions connecting devices and sensors for real-time monitoring and automation.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -1355,7 +1297,7 @@ Hero Area
               <span class="svc-chip"><i class="fa-solid fa-headset"></i> Reliability</span>
               <h3 class="svc-card-title">Maintenance and Support</h3>
               <p class="svc-card-desc">Ongoing maintenance and support to keep your digital products running smoothly.</p>
-              <a href="service.html" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
+              <a href="contact.php" class="svc-learn-more">Learn more <i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
           </article>
         </div>
@@ -2043,7 +1985,7 @@ Product Area
       }
     </style>
 
-    <div class="new-brand-sec space">
+    <div class="new-brand-sec space" id="about-sec">
       <div class="container">
         <div class="row justify-content-center mb-55">
           <div class="col-lg-6 text-center">
@@ -2118,7 +2060,7 @@ Product Area
                     <h3 class="nt-name">Ashif TK</h3>
                     <span class="nt-role">Senior Software Engineer</span>
                   </div>
-                  <p class="nt-desc">Leading Triasoft with a vision to build world-class enterprise solutions, Ashkar brings over a decade of strategic direction and software expertise.</p>
+                  <p class="nt-desc">Leading Triasoft with a vision to build world-class enterprise solutions, Ashif brings over a decade of strategic direction and software expertise.</p>
                 </div>
               </div>
             </div>
@@ -2137,7 +2079,7 @@ Product Area
                     <h3 class="nt-name">Arshal Sha</h3>
                     <span class="nt-role">Software Developer</span>
                   </div>
-                  <p class="nt-desc">An expert in full-stack architecture, Rohith ensures clean, scalable code and mentors the development team to deliver exceptional software.</p>
+                  <p class="nt-desc">An expert in full-stack architecture, Arshal ensures clean, scalable code and mentors the development team to deliver exceptional software.</p>
                 </div>
               </div>
             </div>
@@ -2221,7 +2163,7 @@ Product Area
              <!-- Member 7 -->
             <div class="swiper-slide">
               <div class="nt-card">
-                <div class="nt-front" style="background-image: url('assets/img/team/fayha.png');">
+                <div class="nt-front" style="background-image: url('assets/img/team/fayha-1.jpeg');">
                   <div class="nt-front-info">
                     <h3 class="nt-name">Fathima Fayha</h3>
                     <span class="nt-role">Jr. Performance Marketer</span>
@@ -2637,7 +2579,7 @@ Product Area
               <div class="widget footer-widget">
                 <div class="th-widget-about">
                   <div class="about-logo">
-                    <a href="index.html"
+                    <a href="default.php"
                       ><img src="assets/img/logo-white.png" alt="Atek"
                     /></a>
                   </div>
@@ -2859,7 +2801,7 @@ modal Area
                 </div>
               </div>
               <div id="forgot_url">
-                <a href="my-account.html">Forgot password?</a>
+                <a href="#">Forgot password?</a>
               </div>
               <p class="form-messages mb-0 mt-3"></p>
             </form>

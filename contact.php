@@ -354,24 +354,24 @@
       <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-          <a href="index.html"><img src="assets/img/logo2.svg" alt="Atek" /></a>
+          <a href="default.php"><img src="assets/img/logo2.svg" alt="Atek" /></a>
         </div>
         <div class="th-mobile-menu">
           <ul>
             <li class="menu-item mega-menu-wrap">
-              <a class="active" href="index.html">Home</a>
+              <a href="default.php">Home</a>
             </li>
             <li class="menu-item">
-              <a href="#">About Us</a>
+              <a href="default.php#about-sec">About Us</a>
             </li>
             <li class="menu-item">
-              <a href="#">Our Services</a>
+              <a href="default.php#services">Our Services</a>
             </li>
             <li class="menu-item">
-              <a href="#">Our Products</a>
+              <a href="products.php">Our Products</a>
             </li>
             <li class="menu-item">
-              <a href="contact.html">Contact us</a>
+              <a class="active" href="contact.php">Contact us</a>
             </li>
           </ul>
         </div>
@@ -388,7 +388,7 @@
             <div class="row align-items-center justify-content-between">
               <div class="col-auto">
                 <div class="header-logo">
-                  <a href="#">
+                  <a href="default.php">
                     <img
                       src="assets/img/logo-white.png"
                       width="250px"
@@ -401,20 +401,20 @@
                 <nav class="main-menu d-none d-xl-block">
                   <ul>
                     <li class="menu-item mega-menu-wrap">
-                      <a class="active" href="#">Home</a>
+                      <a href="default.php">Home</a>
                     </li>
                     <li class="menu-item">
-                      <a href="#about-sec">About Us</a>
+                      <a href="default.php#about-sec">About Us</a>
                     </li>
 
                     <li class="menu-item">
-                      <a href="#services">Our Services</a>
+                      <a href="default.php#services">Our Services</a>
                     </li>
                     <li class="menu-item">
-                      <a href="#products">Products</a>
+                      <a href="products.php">Products</a>
                     </li>
                     <li class="menu-item">
-                      <a href="#">Contact us</a>
+                      <a class="active" href="contact.php">Contact us</a>
                     </li>
                   </ul>
                 </nav>
@@ -788,9 +788,6 @@ Map Area
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div class="contact-icon">
-            <img src="assets/img/icon/location-dot3.svg" alt="" />
-          </div>
         </div>
       </div>
     </div>
@@ -963,7 +960,7 @@ Map Area
               <div class="widget footer-widget">
                 <div class="th-widget-about">
                   <div class="about-logo">
-                    <a href="index.html"
+                    <a href="default.php"
                       ><img src="assets/img/logo-white.png" alt="Atek"
                     /></a>
                   </div>
@@ -995,11 +992,11 @@ Map Area
                 <h3 class="widget_title">Useful Link</h3>
                 <div class="menu-all-pages-container">
                   <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="service.html">Our Service</a></li>
-                    <li><a href="contact.html">Terms of Service</a></li>
-                    <li><a href="service.html">News & Media</a></li>
+                    <li><a href="default.php">Home</a></li>
+                    <li><a href="default.php#about-sec">About Us</a></li>
+                    <li><a href="default.php#services">Our Services</a></li>
+                    <li><a href="products.php">Our Products</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
@@ -1071,16 +1068,16 @@ Map Area
           <div class="row justify-content-between align-items-center">
             <div class="col-lg-6">
               <p class="copyright-text">
-                Copyright © 2025 <a href="index.html">Triasoft</a>. All rights
+                Copyright © 2025 <a href="default.php">Triasoft</a>. All rights
                 reserved.
               </p>
             </div>
             <div class="col-lg-6 text-lg-end text-center">
               <div class="footer-links">
                 <ul>
-                  <li><a href="contact.html">Terms &amp; Conditions</a></li>
-                  <li><a href="contact.html">Careers</a></li>
-                  <li><a href="contact.html">Privacy Policy</a></li>
+                  <li><a href="contact.php">Terms &amp; Conditions</a></li>
+                  <li><a href="contact.php">Careers</a></li>
+                  <li><a href="contact.php">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>

@@ -313,6 +313,9 @@
               <a href="products.php">Our Products</a>
             </li>
             <li class="menu-item">
+              <a href="careers.php">Careers</a>
+            </li>
+            <li class="menu-item">
               <a href="contact.php">Contact us</a>
             </li>
           </ul>
@@ -350,6 +353,9 @@
                     </li>
                     <li class="menu-item">
                       <a href="products.php">Products</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="careers.php">Careers</a>
                     </li>
                     <li class="menu-item">
                       <a href="contact.php">Contact us</a>
@@ -2163,7 +2169,7 @@ Product Area
              <!-- Member 7 -->
             <div class="swiper-slide">
               <div class="nt-card">
-                <div class="nt-front" style="background-image: url('assets/img/team/fayha-1.jpeg');">
+                <div class="nt-front" style="background-image: url('assets/img/team/fayha.jpeg');">
                   <div class="nt-front-info">
                     <h3 class="nt-name">Fathima Fayha</h3>
                     <span class="nt-role">Jr. Performance Marketer</span>
@@ -2596,7 +2602,7 @@ Product Area
                     <a href="https://www.linkedin.com/"
                       ><i class="fab fa-linkedin-in"></i
                     ></a>
-                    <a href="https://wa.me/919633542550"
+                    <a href="https://wa.me/919605885550"
                       ><i class="fab fa-whatsapp"></i
                     ></a>
                     <a href="https://instagram.com/triasoft_softwares"
@@ -2630,8 +2636,8 @@ Product Area
                     </div>
                     <div class="details">
                       <p>
-                        <a href="tel:+919633542550" class="info-box_link"
-                          >+91 96335 42550</a
+                        <a href="tel:+919605885550" class="info-box_link"
+                          >+91 96058 85550</a
                         >
                       </p>
                       <p>

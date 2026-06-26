@@ -371,6 +371,9 @@
               <a href="products.php">Our Products</a>
             </li>
             <li class="menu-item">
+              <a href="careers.php">Careers</a>
+            </li>
+            <li class="menu-item">
               <a class="active" href="contact.php">Contact us</a>
             </li>
           </ul>
@@ -412,6 +415,9 @@
                     </li>
                     <li class="menu-item">
                       <a href="products.php">Products</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="careers.php">Careers</a>
                     </li>
                     <li class="menu-item">
                       <a class="active" href="contact.php">Contact us</a>
@@ -650,7 +656,7 @@ Contact Area
               <div class="about-contact-details">
                 <span class="sec-text d-block mb-2">Call Us For Query</span>
                 <p class="about-contact-details-text mb-0">
-                  <a href="tel:+919633542550">(+91) 96335 42550</a>
+                  <a href="tel:+919605885550">(+91) 96058 85550</a>
                 </p>
               </div>
             </div>
@@ -977,7 +983,7 @@ Map Area
                     <a href="https://www.linkedin.com/"
                       ><i class="fab fa-linkedin-in"></i
                     ></a>
-                    <a href="https://wa.me/919633542550"
+                    <a href="https://wa.me/919605885550"
                       ><i class="fab fa-whatsapp"></i
                     ></a>
                     <a href="https://instagram.com/triasoft_softwares"
@@ -1011,8 +1017,8 @@ Map Area
                     </div>
                     <div class="details">
                       <p>
-                        <a href="tel:+919633542550" class="info-box_link"
-                          >+91 96335 42550</a
+                        <a href="tel:+919605885550" class="info-box_link"
+                          >+91 96058 85550</a
                         >
                       </p>
                       <p>
@@ -1076,7 +1082,7 @@ Map Area
               <div class="footer-links">
                 <ul>
                   <li><a href="contact.php">Terms &amp; Conditions</a></li>
-                  <li><a href="contact.php">Careers</a></li>
+                  <li><a href="careers.php">Careers</a></li>
                   <li><a href="contact.php">Privacy Policy</a></li>
                 </ul>
               </div>

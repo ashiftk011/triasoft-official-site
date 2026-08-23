@@ -2014,6 +2014,8 @@ Product Area
           <div class="brand-box"><a href="#"><img src="assets/img/brand/infinity.png" alt="Brand Logo" /></a></div>
           <div class="brand-box"><a href="#"><img src="assets/img/brand/bics.png" alt="Brand Logo" /></a></div>
           <div class="brand-box"><a href="#"><img src="assets/img/brand/vasu.png" alt="Brand Logo" /></a></div>
+          <div class="brand-box"><a href="#"><img src="assets/img/brand/faso.jpg" alt="Brand Logo" /></a></div>
+          <div class="brand-box"><a href="#"><img src="assets/img/brand/vajram.jpeg" alt="Brand Logo" /></a></div>
 
           <!-- Item Set 2 (for seamless loop) -->
           <div class="brand-box"><a href="#"><img src="assets/img/brand/unique.png" alt="Brand Logo" /></a></div>
@@ -2027,6 +2029,8 @@ Product Area
           <div class="brand-box"><a href="#"><img src="assets/img/brand/infinity.png" alt="Brand Logo" /></a></div>
           <div class="brand-box"><a href="#"><img src="assets/img/brand/bics.png" alt="Brand Logo" /></a></div>
           <div class="brand-box"><a href="#"><img src="assets/img/brand/vasu.png" alt="Brand Logo" /></a></div>
+          <div class="brand-box"><a href="#"><img src="assets/img/brand/faso.jpg" alt="Brand Logo" /></a></div>
+          <div class="brand-box"><a href="#"><img src="assets/img/brand/vajram.jpeg" alt="Brand Logo" /></a></div>
         </div>
       </div>
     </div>
@@ -2181,6 +2185,60 @@ Product Area
                     <span class="nt-role">Jr. Performance Marketer</span>
                   </div>
                   <p class="nt-desc">Fayha is a passionate digital marketer who loves creating engaging content and running successful ad campaigns.</p>
+                </div>
+              </div>
+            </div>
+
+             <div class="swiper-slide">
+              <div class="nt-card">
+                <div class="nt-front" style="background-image: url('assets/img/team/althash.png');">
+                  <div class="nt-front-info">
+                    <h3 class="nt-name">Althash Muhammad</h3>
+                    <span class="nt-role">Software Developer</span>
+                  </div>
+                </div>
+                <div class="nt-hover">
+                  <div class="nt-hover-title">
+                    <h3 class="nt-name">Althash Muhammad</h3>
+                    <span class="nt-role">Software Developer</span>
+                  </div>
+                  <p class="nt-desc">Althash is a backend specialist with a knack for building scalable and efficient server-side applications.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="nt-card">
+                <div class="nt-front" style="background-image: url('assets/img/team/ajilan.png');">
+                  <div class="nt-front-info">
+                    <h3 class="nt-name">Muhammed Ajilan</h3>
+                    <span class="nt-role">Flutter Developer</span>
+                  </div>
+                </div>
+                <div class="nt-hover">
+                  <div class="nt-hover-title">
+                    <h3 class="nt-name">Muhammed Ajilan</h3>
+                    <span class="nt-role">Flutter Developer</span>
+                  </div>
+                  <p class="nt-desc">Ajilan is an aspiring Flutter developer dedicated to developing modern, scalable, and user-friendly mobile applications.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="nt-card">
+                <div class="nt-front" style="background-image: url('assets/img/team/sinan.png');">
+                  <div class="nt-front-info">
+                    <h3 class="nt-name">Muhammed Sinan</h3>
+                    <span class="nt-role">Project Manager</span>
+                  </div>
+                </div>
+                <div class="nt-hover">
+                  <div class="nt-hover-title">
+                    <h3 class="nt-name">Muhammed Sinan</h3>
+                    <span class="nt-role">Project Manager</span>
+                  </div>
+                  <p class="nt-desc">Sinan is a project manager passionate about driving successful project execution through effective planning and collaboration.</p>
                 </div>
               </div>
             </div>
